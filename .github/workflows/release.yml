@@ -47,7 +47,11 @@ jobs:
             TAG=alpha
           fi
 
-          pnpm --filter @canaryprobe/core publish --access public --no-git-checks --tag "$TAG"
-          pnpm --filter @canaryprobe/cli publish --access public --no-git-checks --tag "$TAG"
+          # Use explicit paths: `pnpm --filter ... publish` silently skips core.
+          pnpm publish packages/core --access public --no-git-checks --tag "$TAG"
+          pnpm publish packages/cli --access public --no-git-checks --tag "$TAG"
+
+          npm view "@canaryprobe/core@${TAG}" version
+          npm view "@canaryprobe/cli@${TAG}" version
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
