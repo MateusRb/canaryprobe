@@ -4,6 +4,25 @@
   "description": "Core SDK and runners for Canaryprobe synthetic checks as code.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusRb/canaryprobe.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/MateusRb/canaryprobe#readme",
+  "bugs": {
+    "url": "https://github.com/MateusRb/canaryprobe/issues"
+  },
+  "keywords": [
+    "synthetic-monitoring",
+    "monitoring-as-code",
+    "checks",
+    "playwright",
+    "http"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

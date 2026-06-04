@@ -6,9 +6,17 @@ Canaryprobe is an open source, vendor-neutral synthetic monitoring as code toolk
 
 ## Quick Start
 
-Install dependencies:
+Install from npm (alpha):
 
 ```sh
+npm install -D @canaryprobe/core @canaryprobe/cli@alpha
+```
+
+Or clone the repository for development:
+
+```sh
+git clone https://github.com/MateusRb/canaryprobe.git
+cd canaryprobe
 pnpm install
 pnpm build
 ```

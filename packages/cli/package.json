@@ -4,6 +4,26 @@
   "description": "Canaryprobe command line interface.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusRb/canaryprobe.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/MateusRb/canaryprobe#readme",
+  "bugs": {
+    "url": "https://github.com/MateusRb/canaryprobe/issues"
+  },
+  "keywords": [
+    "synthetic-monitoring",
+    "monitoring-as-code",
+    "cli",
+    "checks",
+    "playwright",
+    "http"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "canaryprobe": "./dist/index.js"
   },
