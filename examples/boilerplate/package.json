@@ -1,0 +1,18 @@
+{
+  "name": "canaryprobe-boilerplate",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:test": "canaryprobe test checks",
+    "check:run": "canaryprobe run checks",
+    "check:browser": "canaryprobe run browser-checks"
+  },
+  "dependencies": {
+    "@canaryprobe/cli": "workspace:*",
+    "@canaryprobe/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

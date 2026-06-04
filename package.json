@@ -1,0 +1,38 @@
+{
+  "name": "canaryprobe",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Synthetic checks as code - test in CI, probe production later with the agent.",
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "turbo run test"
+  },
+  "keywords": [
+    "synthetic-monitoring",
+    "monitoring-as-code",
+    "checks",
+    "playwright",
+    "http"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@canaryprobe/cli": "workspace:*",
+    "@canaryprobe/core": "workspace:*",
+    "@types/node": "^22.19.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.7.4",
+    "tsup": "^8.5.1",
+    "turbo": "^2.6.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.49.0",
+    "vitest": "^3.2.4"
+  }
+}

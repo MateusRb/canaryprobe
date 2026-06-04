@@ -1,0 +1,36 @@
+{
+  "name": "@canaryprobe/cli",
+  "version": "0.1.0-alpha.0",
+  "description": "Canaryprobe command line interface.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "canaryprobe": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@canaryprobe/core": "workspace:*",
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
