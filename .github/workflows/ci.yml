@@ -34,7 +34,7 @@ jobs:
         run: pnpm test
 
       - name: Install Playwright Chromium
-        run: pnpm exec playwright install --with-deps chromium
+        run: pnpm --filter @canaryprobe/core exec playwright install --with-deps chromium
 
       - name: Validate example checks
         run: pnpm --filter canaryprobe-boilerplate check:test

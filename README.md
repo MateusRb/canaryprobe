@@ -140,7 +140,7 @@ pnpm --filter canaryprobe-boilerplate check:browser
 Install Playwright Chromium before running browser checks locally if needed:
 
 ```sh
-pnpm exec playwright install chromium
+pnpm --filter @canaryprobe/core exec playwright install chromium
 ```
 
 ## Phase 1 vs Phase 2
